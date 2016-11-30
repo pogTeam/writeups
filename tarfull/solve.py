@@ -1,6 +1,4 @@
 # This solution uses recursion and IS NOT optimized. For better results, go for dynammic programming and use memoization. Or even better, just do the iterative stuff.
-# You will probably need to increase ulimit (as root):
-#   ulimit -u 2048
 import zipfile
 import tarfile
 import magic
