@@ -1,0 +1,11 @@
+Ao acessar a url, o site requisita um usuário e senha.
+Olhando o código fonte, o site contém uma série de arquivos javascript "estranhos".
+
+[rafael@localhost web30]$ wget -r https://ctf.sucurihc.org/flag/eua/web30/index.html #downloading all the website files
+[rafael@localhost web30]$ grep -r "SHC{" ctf.sucurihc.org/
+ctf.sucurihc.org/flag/eua/web30/js/c25vd2RlbjM=.js:                     document.write("SHC{ContinueaBuscar!}<br>");
+ctf.sucurihc.org/flag/eua/web30/js/c25vd2Rlbg==.js:                     document.write("||||||||||||||||||||||||||||||||||<p style='color:white'>SHC{JavaScriptDefense}</p><br>");
+ctf.sucurihc.org/flag/eua/web30/js/c25vd2RlbjI=.js:                     document.write("SHC{DontStopSearching}<br>");
+
+Com algumas distrações no meio dos arquivos, um arquivo javascript continha a flag.
+SHC{JavaScriptDefense}
