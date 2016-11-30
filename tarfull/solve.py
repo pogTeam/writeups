@@ -47,7 +47,8 @@ def extrai( local ):
             extrai(name)
         elif "zip" in tipo:
             print("[DEBUG >>>] New zip file: " + name)
-            z = tarfile.open(local)
+            f = open(local, "rb")
+            z = zipfile.ZipFile(f)
             z.extract(name, "")
             z.close()
             extrai(name)
