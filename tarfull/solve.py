@@ -29,20 +29,29 @@ def extrai( local ):
         z = zipfile.ZipFile(f)
         nameList = z.namelist()
 
+    z.close()
+
     for name in nameList:
         if tipo == "dir":
             continue
         elif name == "solve.py/": # dirty workaround for when the extracted file has the same name of the script
             os.rename("solve.py", "bananas.py")
+            f = open(local, "rb")
+            z = zipfile.ZipFile(f)
             z.extract(name, "")
+            z.close()
             extrai(name)
         elif "gzip" in tipo or "bzip2" in tipo:
             print("[DEBUG >>>] New tar file: " + name)
+            z = tarfile.open(local)
             z.extract(name, "")
+            z.close()
             extrai(name)
         elif "zip" in tipo:
             print("[DEBUG >>>] New zip file: " + name)
+            z = tarfile.open(local)
             z.extract(name, "")
+            z.close()
             extrai(name)
 
 ### ATTENTION: RADIOACTIVE CODE! USE WITH CAUTION ###
