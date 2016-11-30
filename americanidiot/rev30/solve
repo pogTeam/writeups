@@ -1,0 +1,16 @@
+Ao analisar o arquivo disponibilizado, o mesmo é um APK (https://en.wikipedia.org/wiki/Android_application_package) 
+que contém uma série de arquivos compactados no momento da compilação do pacote Android.
+Basicamente, é possível "dezipar" os arquivos e verificar as informações contidas.
+Como não tinha certeza se a flag estava dentro de algum arquivo ou algo parecido, iniciei a busca de algo relativo à flag na estrutura de pastas e, por sorte, funcionou de primeira! :)
+
+[rafael@localhost rev30]$ wget https://github.com/ctf-h4k/Eventos/blob/master/eua/rev30/flag.apk?raw=true
+[rafael@localhost rev30]$ mv flag.apk\?raw\=true flag.apk
+[rafael@localhost rev30]$ file flag.apk #flag.apk: Java archive data (JAR)
+[rafael@localhost rev30]$ unzip flag.apk -d folder
+[rafael@localhost rev30]$ tree folder/ | grep flag
+... #too much information
+¦   ¦   +-- flag.png
+... #too much information
+
+A imagem continha a flag.
+SHC{americanidiot}
