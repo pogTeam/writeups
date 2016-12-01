@@ -13,10 +13,15 @@ Coleção de writeups
 ### Livros
 * The Shellcoder's Handbook
 * Hacking: The Art of Exploitation
+
 ### Web
+
 ### Pwn
+
 * http://pwnable.kr/
+
 ### Crypto
+
 * http://cryptopals.com/
 * https://www.coursera.org/learn/crypto
 
