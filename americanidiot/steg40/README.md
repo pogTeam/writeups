@@ -32,3 +32,9 @@ wrote extracted data to ".flag.txt".
 [rafael@localhost steg40]$ cat .flag.txt
 SHC{PlanOfTheBuilding}
 ```
+
+Links:
+
+[[1] - Exiftool](http://www.sno.phy.queensu.ca/~phil/exiftool/)
+
+[[2] - Steghide](http://steghide.sourceforge.net/)
