@@ -12,7 +12,7 @@ O Audacity permite que visualizemos o áudio pelo espectrograma, ao invés do form
 
 ![Flag](flag.png)
 
-Agora sim! Claramente nossa flag criptografada. Pelo formato é bem provável que seja uma cifra de substituição bem simples, como césar. Testando online http://www.xarg.org/tools/caesar-cipher/ vemos que realmente é de fato um ROT23.
+Agora sim! Claramente nossa flag criptografada. Pelo formato é bem provável que seja uma cifra de substituição bem simples, como césar. Testando online (aqui)[http://www.xarg.org/tools/caesar-cipher/) vemos que realmente é de fato um ROT23.
 
 O único problema é que essa flag não é aceita! Talvez o challenger quisesse colocar um pouco de guessing ou foi um erro de digitação mesmo. Adicionando o *e* que falta fechamos a questão :)
 
