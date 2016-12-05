@@ -3,7 +3,7 @@
 O desafio apresentava era um arquivo compactado com uma imagem e um arquivo texto.
 A imagem é um tabuleiro *bizarro* com uma sequencia de números {1~8} e letras {a-h}.
 
-![Tabuleiro](tabuleiro_final.jpg)
+![Tabuleiro](tabuleiro_final.png)
 
 O arquivo texto continha uma série de "comandos" que deveriam ser executados, fazendo uma alusão ao jogo de xadrez!
 
