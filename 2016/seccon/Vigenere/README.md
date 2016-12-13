@@ -10,7 +10,7 @@ c: LMIG}RPEDOEEWKJIQIWKJWMNDTSR}TFVUFWYOCBAJBQ
 k=key, p=plain, c=cipher, md5(p)=f528a6ab914c1ecf856a1d93103948fe
 ~~~~
 
-From now on we are going to assume *len(k)==12*. Our main goal is clearly to find *p*. Since we have the first 7 chars of *p* we could easily find the 7 first chars of *c*. We could even use the given table and do it manually. For the first char of *p*, *p[0]=='S'*, we would check the row of the table corresponding to *S*. Since *S* gets mapped to *c[0]=='L'*, we look for *L* in this row, which is in the column of *V*. The figure below ilustrates this process:
+From now on we are going to assume *len(k)==12*. Our main goal is clearly to find *p*. Since we have the first 7 chars of *p* we could easily find the first 7 chars of *c*. We could even use the given table and do it manually. For the first char of *p*, *p[0]=='S'*, we would check the row of the table corresponding to *S*. Since *S* gets mapped to *c[0]=='L'*, we look for *L* in this row, which is in the column of *V*. The figure below ilustrates this process:
 
 ![Vigenere](https://github.com/pogTeam/writeups/blob/master/2016/seccon/Vigenere/vigenere.png)
 
@@ -25,7 +25,7 @@ for p,c in zip(pt, ct):
 print(res)
 ~~~~
 
-This simple procedure results in *VIGESEN* as the first part of the key. Evidently the chars '{' and '}' are not being correctly treated in positions 5 and 7. Either by correcting tem manually or by guessing, we might deduce that *VIGENER* is indeed the first part. It is not hard to find that *VIGENERE* are the first 8 chars of the key.
+This simple procedure results in *VIGESEN* as the first part of the key. Evidently the chars '{' and '}' are not being correctly treated in positions 5 and 7. Either by correcting them manually or by guessing, we might deduce that *VIGENER* is indeed the first part. It is not hard to find that *VIGENERE* are the first 8 chars of the key.
 
 We have the following result so far:
 
