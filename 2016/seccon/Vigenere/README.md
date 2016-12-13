@@ -46,7 +46,6 @@ import itertools
 import hashlib
 import binascii
 
-keyBase = "VIGENERE"
 hashChall = "f528a6ab914c1ecf856a1d93103948fe"
 res = ""
 
