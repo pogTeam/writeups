@@ -1,4 +1,4 @@
-Vigenere - Crypto 100
+#Vigenere - Crypto 100
 
 As the title for this chall claims, this is all about Vigenere cipher. Interestingly the alphabet used is not [A-Z], but also includes '{' and '}'. Besides giving us a full Vigenere table, the chall also provides some information about the key, the plaintext and the ciphertext.
 
