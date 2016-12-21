@@ -189,7 +189,7 @@ End of assembler dump.
 (gdb)
 ```
 
-Here we need to create a break point in:
+Here we need to create a break point in, right before the remove call, so we can take a look at the output file.
 ```
 0x00000000004008bc <+358>:	call   0x4005d0 <fclose@plt>
 ```
@@ -219,7 +219,7 @@ strlen("SharifCTF{b70c59275fcfa8aebf2d59"...)                                   
 ```
 
 
-So the output file does not have the correct flag value, so let's back to the gdb. Quite the current session and let's open another.
+So the output file does not have the correct flag value, so let's back to the gdb. Quit the current session and let's open another.
 ```bash
 gdb -q
 (gdb) file getit
