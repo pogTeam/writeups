@@ -46,7 +46,7 @@ SharifCTF{????????????????????????????????}
 
 So we got some kind of string about the flag in hex above the SharifCTF line but it does not work, another interesting thing we have in the output is the /tmp/flaHg.txf, so let's check the calls
 ```bash
-ce ./getit
+ltrace ./getit
 __libc_start_main(0x400756, 1, 0x7ffdc20a5348, 0x4008f0 <unfinished ...>
 strlen("c61b68366edeb7bdce3c6820314b7498"...)                                                                                                                   = 32
 strlen("c61b68366edeb7bdce3c6820314b7498"...)                                                                                                                   = 32
