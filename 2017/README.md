@@ -1,3 +1,4 @@
 # Writeups 2017
-Coleção de writeups
+
+@pogTeam's writeups collections.
 
