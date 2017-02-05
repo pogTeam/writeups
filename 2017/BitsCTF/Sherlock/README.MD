@@ -12,7 +12,7 @@ Our team mate @cyborg found this and we started to work on it.
 
 ![1](1.png)
 
-The group of capital letters is clearly the words 'ZERO' and 'ONE'.
+These group of capital letters are clearly the words 'ZERO' and 'ONE'.
 From this approach, we assumed we had to convert this binary information to something readable.
 
 With a simple python script, we got the flag:
