@@ -7,4 +7,6 @@ Include a space between operands, if applicable.
 
 ## Solution
 
-According Wikipedia (https://en.wikipedia.org/wiki/NOP), the answer is #xchg eax, eax#
+According Wikipedia (https://en.wikipedia.org/wiki/NOP), the answer is:
+
+# xchg eax, eax
