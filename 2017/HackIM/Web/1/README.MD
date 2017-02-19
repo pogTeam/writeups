@@ -16,7 +16,7 @@ When you enter the website, in the end of the source code there was a base64 str
 After get these values, I tried to curl the flag but I was getting an error message.
 I saw a hint in the Nullcon twitter: 'There's no place like home' and a friend that I made in the contest (thanks [@menztrual](https://twitter.com/menztrual) from TheGoonies ;)) cleared my mind:
 
-curl -v --header "X-Forwarded-For: 127.0.0.1" --data "user=coldplay&pass=paradise" "http://54.152.19.210/web100/"
+curl -v --header "X-Forwarded-For: 127.0.0.1" --data "user=coldplay&pass=paradise" -X POST "http://54.152.19.210/web100/"
 
 The header <b>X-Forwarded-For</b> was the catch!
 
