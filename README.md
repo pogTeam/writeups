@@ -1,27 +1,33 @@
 # writeups
-Coleção de writeups
+Solutions from multiple CTFs we have played.
 
-# Recursos
+# Resources
 
-## Prática (genéricos)
+## General practice
 
 * http://ctftime.org/
-* https://www.pwnerrank.com/
+* http://hackthebox.eu/
 * https://www.vulnhub.com/
-* https://ctf.sucurihc.org/
+* http://pwnable.kr/
+* https://hack.me
+* http://root-me.org/
 
-### Livros
+### Reverse Engineering
+
 * The Shellcoder's Handbook
 * Hacking: The Art of Exploitation
+* https://exploit-exercises.com/nebula
+* http://pwnable.kr/
 
 ### Web
 
-### Pwn
-
-* http://pwnable.kr/
+* The Web Application Hacker's Handbook
+* https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet
+* https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project
+* https://xss-game.appspot.com/
+* https://hack.me/t/XSS
 
 ### Crypto
 
 * http://cryptopals.com/
 * https://www.coursera.org/learn/crypto
-
