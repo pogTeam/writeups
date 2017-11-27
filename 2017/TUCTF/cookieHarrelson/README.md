@@ -1,4 +1,4 @@
-# Git Gud (100pts)
+# Cookie Harrelson (200pts)
 
 ## Description
 
