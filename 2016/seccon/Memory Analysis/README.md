@@ -9,6 +9,7 @@ memoryanalysis.zip
 The challenge files are huge, please download it first.
 Hint1: http://www.volatilityfoundation.org/
 Hint2: Check the hosts file
+password: fjliejflsjiejlsiejee33cnc
 
 ## Resolution
 
